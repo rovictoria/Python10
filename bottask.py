@@ -48,7 +48,7 @@ def hello_user(message):
                 request = data.readline()
                 data.close()
                 bot.reply_to(message, request)
-                bot.send_message(message.from_user.id, 'Введите ответ один сообщением')
+                bot.send_message(message.from_user.id, 'Введите ответ одним сообщением')
 
 
 bot.infinity_polling()
